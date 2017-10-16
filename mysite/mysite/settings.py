@@ -11,6 +11,17 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+# template path
+TEMPLATE_PATH=os.path.join(BASE_DIR,'templates')
+TEMPLATE_DIRS=(
+    TEMPLATE_PATH,
+    )
+# code that determines the abs path to static media
+STATIC_PATH=os.path.join(BASE_DIR,'static')
+STATIC_URL = '/static/'
+STATICFILES_DIRS=(
+    STATIC_PATH,
+    )
 
 
 # Quick-start development settings - unsuitable for production
